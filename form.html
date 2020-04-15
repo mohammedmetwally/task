@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset=utf-8 />
+        <title>JavaScript program to calculate division of two numbers </title>
+        <link rel="stylesheet"href="style.css">
+        <style >
+            body
+            {
+                background:url(HD-Wallpapers-for-Laptop-3.jpg); 
+                background-size:1600x1000px;
+                background-position: center;
+            }
+            table
+            { 
+               text-align-last:  center;
+                width: 300px;
+                height: 400px;
+                background: lightgreen;
+                color:black;
+                top:50%;
+                left:50%;
+                position:absolute;
+                transform: translate(-50%,-50%);
+                box-sizing: border-box;
+                padding: 60px 30px;
+                border-radius: 50px;
+            }
+            span
+            {
+                text-align-last: center;
+            }
+            p
+            {
+                text-align-last: center;
+            }
+            input
+            {
+                background: lightblue;
+                text-align-last:  center;
+                width: 70%;
+                padding: 5px;
+                margin: 10px ;        
+                border-radius: 10px;
+                font-size: 20px;
+                line-height: 10px;
+            }
+            button
+            {
+                background: lightblue;
+            }
+        </style> 
+        <script>
+            function divideBy() 
+            { 
+                var num1 = document.getElementById("firstNumber").value;
+                var num2 = document.getElementById("secondNumber").value;   
+                if(num2==0)
+                    {
+                       document.getElementById("result").innerHTML = "undefined";
+                    }
+                else
+                    {
+                        document.getElementById("result").innerHTML = num1 / num2;
+                    }
+            }          
+        </script>
+    </head>
+    <body>
+        <form action="index.html">
+            <table>
+                <tr><td><h1> Division</h1></td></tr>
+                <tr>
+                    <td> <input type="text" value="" placeholder="first number"id="firstNumber" /> <br>
+                    </td>
+                </tr>
+                <tr>
+                   <td> <input type="text" value="" placeholder=" second number"id="secondNumber" /><br></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onClick="divideBy()" Value="Divide" /><br></td>    
+                </tr>
+                 <tr>
+                    <td>
+                        <input type="submit" value="Back "><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>The Result is :  <span id = "result"></span> </td>
+                </tr>
+               
+            </table>
+        </form>
+    </body>
+</html>
